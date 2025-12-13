@@ -18,22 +18,22 @@ program
     "--no-build",
     "skip building the Next.js app (use only if you already built the app)"
   )
+  .option("--verbose", "show build output", false)
   .parse(process.argv);
 
 const options = program.opts();
 
-console.log(`🚀 Starting LanDropr on port ${options.port}...`);
+console.log(`Starting LanDropr on port ${options.port}...`);
 
 function runCommand(command, args, options = {}) {
-  const { cwd = process.cwd(), silent = false } = options;
+  const { cwd = process.cwd(), silent = !options.verbose } = options;
+
   if (!silent) {
     console.log(`> ${command} ${args.join(" ")}`);
   }
-  const result = spawnSync(command, args, {
-    stdio: "inherit",
-    cwd,
-    ...options,
-  });
+
+  const stdio = silent ? "ignore" : "inherit";
+  const result = spawnSync(command, args, { stdio, cwd, ...options });
   if (result.status !== 0) {
     process.exit(result.status || 1);
   }
@@ -41,8 +41,10 @@ function runCommand(command, args, options = {}) {
 }
 
 if (options.build !== false) {
-  console.log("🔨 Building Next.js application...");
-  runCommand("npm", ["run", "build"], { cwd: __dirname + "/.." });
+  runCommand("npm", ["run", "build"], {
+    cwd: __dirname + "/..",
+    verbose: options.verbose,
+  });
 }
 
 const server = spawn(
