@@ -3,6 +3,6 @@
 4:I[33681,["/_next/static/chunks/1574d0fa15d8dc04.js","/_next/static/chunks/53bd980b49f57a95.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[91454,["/_next/static/chunks/1574d0fa15d8dc04.js","/_next/static/chunks/53bd980b49f57a95.js"],"IconMark"]
-0:{"buildId":"XTMaCblZgkkO8KHmkJdjF","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"Tr5h1Ly6nzWucyeLQXwAM","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"LanDropr - Local Network File Sharing"}],["$","meta","1",{"name":"description","content":"Share files across your local network with ease. Upload, organize, and download with compression."}],["$","link","2",{"rel":"icon","href":"/icon.png"}],["$","$L7","3",{}]]
