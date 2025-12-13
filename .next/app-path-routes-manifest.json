@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/files/[id]/route": "/api/files/[id]",
+  "/api/files/bulk-download/route": "/api/files/bulk-download",
+  "/api/files/route": "/api/files",
+  "/api/folders/[id]/route": "/api/folders/[id]",
+  "/api/folders/route": "/api/folders",
+  "/api/network/route": "/api/network",
+  "/page": "/"
+}

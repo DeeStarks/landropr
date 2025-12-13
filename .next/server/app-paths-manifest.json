@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/files/[id]/route": "app/api/files/[id]/route.js",
+  "/api/files/bulk-download/route": "app/api/files/bulk-download/route.js",
+  "/api/files/route": "app/api/files/route.js",
+  "/api/folders/[id]/route": "app/api/folders/[id]/route.js",
+  "/api/folders/route": "app/api/folders/route.js",
+  "/api/network/route": "app/api/network/route.js",
+  "/page": "app/page.js"
+}
