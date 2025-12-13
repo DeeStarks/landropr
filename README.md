@@ -1,20 +1,20 @@
-# 🚀 LanDropr
+# <img src="public/icon.png" alt="LanDropr Logo" style="width: 20px; height: 20px;"> LanDropr
 
 [![npm version](https://img.shields.io/npm/v/landropr)](https://www.npmjs.com/package/landropr)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 LanDropr is a fast, secure, and easy-to-use file sharing application designed for local networks. Share files between devices on the same network without any complicated setup or external services.
 
-## ✨ Features
+## Features
 
-- 🌐 Local network file sharing
-- 📱 QR code for easy device connection
-- 🚀 Fast file transfers
-- 🔒 Peer-to-peer connections
-- 📁 Simple drag-and-drop interface
-- 🖥️ Web-based - no installation needed on client devices
+- Local network file sharing
+- QR code for easy device connection
+- Fast file transfers
+- Peer-to-peer connections
+- Simple drag-and-drop interface
+- Web-based - no installation needed on client devices
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # Install globally
@@ -24,7 +24,7 @@ npm install -g landropr
 npx landropr
 ```
 
-## 🏃‍♂️ Usage
+## Usage
 
 1. Start the LanDropr server:
 
@@ -44,12 +44,12 @@ npx landropr
 
 4. Drag and drop files to share them instantly
 
-## 🔧 Development
+## Development
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/landropr.git
+   git clone https://github.com/deestarks/landropr.git
    cd landropr
    ```
 
@@ -70,20 +70,20 @@ npx landropr
    npm run build
    ```
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with Next.js and TypeScript
 - Uses WebSockets for real-time communication
 - Styled with Tailwind CSS
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Contact
+## Contact
 
 For any questions or feedback, please open an issue on GitHub.
