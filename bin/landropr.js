@@ -15,8 +15,8 @@ program
   .option("-h, --host <host>", "host to bind the server to", "0.0.0.0")
   .option("--no-browser", "do not open browser automatically")
   .option(
-    "--no-build",
-    "skip building the Next.js app (use only if you already built the app)"
+    "--build",
+    "force build the Next.js app (use after updates or first run)"
   )
   .option("--verbose", "show build output", false)
   .parse(process.argv);
@@ -40,7 +40,12 @@ function runCommand(command, args, options = {}) {
   return result;
 }
 
-if (options.build !== false) {
+// Check if build is needed
+const needsBuild =
+  options.build === true ||
+  !require("fs").existsSync(__dirname + "/../.next/BUILD_ID");
+
+if (needsBuild) {
   runCommand("npm", ["run", "build"], {
     cwd: __dirname + "/..",
     verbose: options.verbose,
